@@ -1,0 +1,43 @@
+.app__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-shadow: -5px 6px 50px 13px rgba(0,0,0,0.21);
+}
+
+@media (max-width: 1400px) {
+  .app__container {
+    max-width: 1400px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .app__container {
+    max-width: 1200px;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .app__container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app__container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app__container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: 320px) {
+  .app__container {
+    max-width: 320px;
+  }
+}

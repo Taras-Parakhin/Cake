@@ -1,1 +1,132 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@400;700;800&family=Ubuntu:wght@400;500&display=swap');
+
+:root {
+  --main-color: #CB6187;
+  --bg: #F3F3F4;
+  --text-black: #212B36;
+  --text-grey: #454F5B;
+  --text-white: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.logo {
+  width: 150px;
+  padding-right: 20px;
+}
+
+.container {
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  width: 126px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--bg);
+  cursor: pointer;
+  color: var(--text-grey);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s all;
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.slider-btn-left, .slider-btn-right {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #FAEEEE;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: 3px 2px 15px rgba(203, 97, 148, 0.08);
+  background-color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  &:active {
+    box-shadow: none;
+  }
+  &::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid #919EAB;
+    border-left: 1px solid #919EAB;
+    transform: rotate(-45deg) translate(25%, 25%);
+  }
+}
+
+.slider-btn-right {
+  left: unset;
+  right: -100px;
+  &::before {
+    border-left: none;
+    border-right: 1px solid #919EAB;
+    transform: rotate(45deg) translate(-25%, 25%);
+  }
+}
+
+@media (max-width: 1400px) {
+  .btn {
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .slider-btn-right, .slider-btn-left {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .logo {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 372px) {
+  .btn {
+    width: 90px;
+  }
+}
