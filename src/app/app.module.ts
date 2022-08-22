@@ -6,9 +6,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { AdvantageComponent } from './components/advantage/advantage.component';
 import { EventsComponent } from './components/events/events.component';
 import { ConfectionersComponent } from './components/confectioners/confectioners.component';
-import { OrderComponent } from './components/order/order.component';
+import { OrdersComponent } from './components/orders/orders.component';
 import { ManufactoryComponent } from './components/manufactory/manufactory.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ConfectionerComponent } from './components/confectioner/confectioner.component';
+import { OrderComponent } from './components/order/order.component';
 
 @NgModule({
   declarations: [
@@ -17,9 +19,11 @@ import { FooterComponent } from './components/footer/footer.component';
     AdvantageComponent,
     EventsComponent,
     ConfectionersComponent,
-    OrderComponent,
+    OrdersComponent,
     ManufactoryComponent,
-    FooterComponent
+    FooterComponent,
+    ConfectionerComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule

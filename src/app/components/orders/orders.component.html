@@ -1,0 +1,261 @@
+<section class="order">
+  <div class="container">
+    <h2 class="order__title">Найчастіше замовляють</h2>
+
+    <div class="order__wrapper">
+      <app-order *ngFor="let order of orders" [order]="order"></app-order>
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-1-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-1-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-1-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-2-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-2-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-2-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-3-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-3-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-3-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-1-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-4-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-4-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-2-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-1-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-1-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-3-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-2-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-2-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-1-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-3-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-3-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="order__box">-->
+<!--        <picture>-->
+<!--          <source media="(max-width: 992px)" srcset="assets/images/cakes/cake-2-3.png 1x">-->
+<!--          <source media="(max-width: 993px" srcset="assets/images/cakes/cake-4-4_big.png 1x">-->
+<!--          <img class="order__box-img" src="assets/images/cakes/cake-4-4_big.png" alt="cake" >-->
+<!--        </picture>-->
+<!--        <div class="order__box-time">Замовлення за 14 днів</div>-->
+
+<!--        <div class="order__box-btns">-->
+<!--          <button class="btn order__box_btn">Торт</button>-->
+<!--          <button class="btn order__box_btn">Бісквіт</button>-->
+<!--        </div>-->
+
+<!--        <h3 class="order__box-cake">Ягідний бісквіт</h3>-->
+<!--        <h3 class="order__box-cake order__box-minicake">Ягідний бісквіт з полуницею..</h3>-->
+<!--        <div class="order__box-price">300 грн/кг</div>-->
+
+<!--        <div class="order__box-wrapper">-->
+<!--          <picture>-->
+<!--            <source media="(max-width: 992px)" srcset="assets/images/cakes/galina-bgilka.png 1x">-->
+<!--            <source media="(max-width: 993px" srcset="assets/images/cakes/galina-bgilka_big.png 1x">-->
+<!--            <img class="order__box-photo" src="assets/images/cakes/galina-bgilka_big.png" alt="photo">-->
+<!--          </picture>-->
+
+<!--          <div>-->
+<!--            <div class="order__box-name">Галина Бджілка</div>-->
+<!--            <div class="order__box-location">Зароріжжя</div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <button class="slider-btn-left"></button>
+      <button class="slider-btn-right"></button>
+    </div>
+
+    <button class="btn order_btn">Дивитись всі</button>
+  </div>
+</section>
