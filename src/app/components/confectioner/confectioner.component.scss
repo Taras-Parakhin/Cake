@@ -1,0 +1,124 @@
+.box {
+  min-width: 465px;
+  padding: 16px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  &-imgs {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-photo {
+    width: 248px;
+  }
+  &-cake-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &-cake-img {
+    width: 168px;
+  }
+  &-name {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--text-black);
+  }
+  &-btns {
+    width: 180px;
+    margin-top: 25px;
+    display: flex;
+    gap: 9px 6px;
+    flex-wrap: wrap;
+  }
+  &_btn {
+    width: unset;
+    height: 18px;
+    padding: 0 8px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  &-wrapper {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &-feedback {
+    width: 240px;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--text-grey);
+    &-descr {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-num {
+      padding-left: 18px;
+      position: relative;
+      &::before {
+        content: url("../../../assets/icons/asd.svg");
+        position: absolute;
+        left: 0;
+      }
+    }
+    &-scale {
+      margin-top: 5px;
+      border-radius: 2px;
+      background-color: #DFE3E8;
+    }
+    &-line {
+      height: 4px;
+      width: 97%;
+      border-radius: 2px;
+      background-color: var(--main-color);
+    }
+  }
+  &_btn-more {
+    width: 80px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .box {
+    min-width: unset;
+    width: 264px;
+    padding: 12px;
+    &-img {
+      display: flex;
+      column-gap: 14px;
+    }
+    &-photo {
+      width: 76px;
+    }
+    &-feedback {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-num {
+        &::before {
+          top: 2px;
+        }
+      }
+      &-descr {
+        margin-top: 10px;
+        width: 140px;
+        display: block;
+      }
+      &-scale {
+        width: 100%;
+      }
+    }
+    &-btns {
+      width: unset;
+      margin-top: 10px;
+    }
+    &-imgs {
+      margin-top: 11px;
+    }
+    &-cake-img {
+      width: 112px;
+    }
+  }
+}

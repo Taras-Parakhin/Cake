@@ -1,0 +1,28 @@
+<div class="box">
+  <picture>
+    <source media="(max-width: 992px)" [srcset]="[order.img]+'-1-3.png 1x'">
+    <source media="(max-width: 993px" [srcset]="[order.img]+'-1-4.png 1x'">
+    <img class="box-img" [src]="[order.img]+'-1-4_big.png'" alt="cake" >
+  </picture>
+  <div class="box-time">{{order["order-time"]}}</div>
+
+  <div class="box-btns">
+    <button class="btn box_btn" *ngFor="let btn of order.btns">{{btn}}</button>
+  </div>
+
+  <h3 class="box-cake">{{order["cake-name"]}}</h3>
+  <div class="box-price">{{order.price}} грн/кг</div>
+
+  <div class="box-wrapper">
+    <picture>
+      <source media="(max-width: 992px)" [srcset]="[order.photo]+'.png 1x'">
+      <source media="(max-width: 993px" [srcset]="[order.photo]+'_big.png 1x'">
+      <img class="box-photo" [src]="[order.photo]+'_big.png'" alt="photo">
+    </picture>
+
+    <div>
+      <div class="box-name">{{order.name}}</div>
+      <div class="box-location">{{order.location}}</div>
+    </div>
+  </div>
+</div>

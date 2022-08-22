@@ -1,0 +1,58 @@
+<div class="box" *ngIf="!mediaWidth">
+  <div class="box-imgs">
+    <img class="box-photo" [src]="[confectioner.photo]+'_big.png'"  alt="confectioner">
+    <div class="box-cake-imgs">
+      <img class="box-cake-img" *ngFor="let img of confectioner.imgs" [src]="[img]+'_big.png'" alt="cake">
+    </div>
+  </div>
+
+  <h2 class="box-name">{{confectioner.name}}</h2>
+
+  <div class="box-btns">
+    <button class="btn box_btn" *ngFor="let btn of confectioner.btns">{{btn}}</button>
+  </div>
+
+  <div class="box-wrapper">
+    <div class="box-feedback">
+      <div class="box-feedback-descr">
+        <div>{{confectioner["positive-feedbacks"]}}% позитивних відгуків</div>
+        <div class="box-feedback-num">{{confectioner.feedbacks}}</div>
+      </div>
+
+      <div class="box-feedback-scale">
+        <div class="box-feedback-line"></div>
+      </div>
+    </div>
+
+    <button class="btn box_btn-size" (click)="more(confectioner.name)">Більше</button>
+  </div>
+</div>
+
+<!--@media (max-width: 992px)-->
+
+<div class="box" *ngIf="mediaWidth">
+  <div class="box-img">
+    <img class="box-photo" [src]="[confectioner.photo]+'.png'" alt="confectioner">
+    <h2 class="box-name">{{confectioner.name}}</h2>
+  </div>
+
+  <div class="box-feedback">
+    <div class="box-feedback-num">{{confectioner.feedbacks}}</div>
+
+    <div class="box-feedback-descr">
+      <div>{{confectioner["positive-feedbacks"]}}% позитивних відгуків</div>
+
+      <div class="box-feedback-scale">
+        <div class="box-feedback-line"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box-btns">
+    <button class="btn box_btn" *ngFor="let btn of confectioner.btns">{{btn}}</button>
+  </div>
+
+  <div class="box-imgs">
+    <img class="box-cake-img" *ngFor="let img of confectioner.imgs" [src]="[img]+'.png'" alt="cake">
+  </div>
+</div>
